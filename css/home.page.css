@@ -1,0 +1,53 @@
+body {
+    background-image      : url('/img/home_full_bg.jpeg');
+    background-repeat     : no-repeat;
+    background-position   : center;
+    background-size       : cover;
+    background-blend-mode : multiply;
+}
+
+h1 {
+    color       : var(--bright-text-color);
+    font-size   : 5.5rem;
+    font-weight : bold;
+}
+
+p {
+    color     : var(--bright-text-color);
+    font-size : 1.35rem;
+    opacity   : .9;
+}
+
+a {
+    backdrop-filter         : blur(10px);
+    border                  : 2px solid var(--background-color);
+    border-radius           : var(--roundness);
+    box-sizing              : content-box;
+    color                   : var(--bright-text-color);
+    display                 : inline-block;
+    font-size               : 1.15rem;
+    line-height             : 3.5rem;
+    padding                 : 0 1.5rem;
+    transition              : background-color 155ms ease-in-out, transform 155ms ease-in-out;
+    -webkit-backdrop-filter : blur(10px);
+}
+
+a:hover {
+    background-color : var(--background-color);
+    color            : var(--text-color);
+    transform        : scale(1.05);
+}
+
+h1, p, a { text-align : center; }
+
+div[role=group] {
+    display         : flex;
+    flex-wrap       : wrap;
+    justify-content : center;
+    margin-top      : 10vh;
+}
+
+div[role=group] > * {
+    flex   : 0 1 auto;
+    margin : 1rem;
+}

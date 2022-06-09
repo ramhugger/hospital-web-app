@@ -1,0 +1,54 @@
+input {
+    background-color : var(--background-color);
+    border           : none;
+    border-bottom    : 2px solid var(--darker-background-color);
+    color            : var(--light-text-color);
+    font-family      : 'Arial', sans-serif;
+    font-size        : 1.25rem;
+    font-weight      : 600;
+    line-height      : 1.35rem;
+    padding          : .5rem 0;
+    transition       : border-color 125ms ease-in-out, color 125ms ease-in-out;
+    width            : 100%;
+}
+
+input:hover {
+    border-bottom-color : var(--light-text-color);
+}
+
+table {
+    border-collapse : collapse;
+    border-radius   : var(--roundness);
+    border-spacing  : 0;
+    font-family     : 'Arial', sans-serif;
+    width           : 100%;
+}
+
+table tr th {
+    font-size : 1.5rem;
+}
+
+table > tbody tr:nth-child(odd) {
+    background-color : var(--background-color);
+}
+
+table > tbody tr:nth-child(even) {
+    background-color : var(--darker-background-color);
+}
+
+tbody {
+    padding : .375rem .5rem;
+}
+
+td {
+    font-family    : 'Arial', sans-serif;
+    font-size      : .9rem;
+    padding-bottom : 20px;
+    padding-right  : 20px;
+    padding-top    : 20px;
+}
+
+td:first-child {
+    padding-left  : 20px;
+    padding-right : 0;
+}

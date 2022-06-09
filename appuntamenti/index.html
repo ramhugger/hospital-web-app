@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/tables.module.css">
+
+    <script src="/js/appuntamenti.main.js" type="module" defer></script>
+
+    <title>Appuntamenti</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>
+            <label>
+                <input type="text"
+                       name="clientName"
+                       id="clientName"
+                       placeholder="Paziente"
+                       tabindex="1"
+                       title="Digita per filtrare la tabella"
+                       autofocus>
+            </label>
+        </th>
+        <th>
+            <label>
+                <input type="text"
+                       name="doctor"
+                       id="doctor"
+                       placeholder="Dottore"
+                       tabindex="2"
+                       title="Digita per filtrare la tabella">
+            </label>
+        </th>
+        <th>
+            <label>
+                <input type="text"
+                       name="visitType"
+                       id="visitType"
+                       placeholder="Tipo Visita"
+                       tabindex="2"
+                       title="Digita per filtrare la tabella">
+            </label>
+        </th>
+        <th>
+            <label>
+                <input type="date"
+                       name="time"
+                       id="time"
+                       placeholder="Data"
+                       tabindex="4"
+                       title="Seleziona un giorno per filtrare la tabella">
+            </label>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</body>
+</html>

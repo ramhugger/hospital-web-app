@@ -1,0 +1,30 @@
+:root {
+    --background-color        : whitesmoke;
+    --darker-background-color : #ECECEC;
+
+    --text-color              : #181818;
+    --bright-text-color       : #F6F6F6;
+    --light-text-color        : #646464;
+
+    --light-shadow            : 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+
+    --roundness               : .3rem;
+}
+
+* {
+    font-family                 : 'Eczar', serif;
+    margin                      : 0;
+    outline                     : none;
+    padding                     : 0;
+    position                    : relative;
+    text-decoration             : none;
+    -webkit-tap-highlight-color : #00000000;
+}
+
+body {
+    background-color : var(--background-color);
+    display          : grid;
+    min-height       : 100vh;
+    place-content    : center;
+    width            : 100vw;
+}

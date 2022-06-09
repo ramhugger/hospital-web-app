@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/forms.module.css">
+
+    <script src="/js/prenota.main.js" type="module" defer></script>
+
+    <title>Prenota un Appuntamento</title>
+</head>
+<body>
+<h1>Prenota un Appuntamento</h1>
+<form action="/api/appointment/" method="post">
+    <label>
+        Codice fiscale:
+        <input type="text"
+               name="taxCode"
+               id="taxCode"
+               minlength="16"
+               maxlength="16"
+               title="Inserisci un codice fiscale valido"
+               pattern="[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]"
+               required>
+        <br>
+    </label>
+
+    <label>
+        Visita:
+        <select name="visitId" id="visitId"></select>
+        <br>
+    </label>
+
+    <label>
+        Data e Ora:
+        <input type="datetime-local" name="time" id="time" required>
+        <br>
+    </label>
+
+    <input type="submit" value="Prenota">
+</form>
+</body>
+</html>
