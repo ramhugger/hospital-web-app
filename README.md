@@ -42,10 +42,10 @@ modern DOM manipulation techniques to display the results.
 
 ## Installation
 
-To install Hospital, you need to install the required dependencies.
+To use Hospital, you first need to install the required dependencies.
 Afterwards, you can run [the migration script](internal/sql/migrations/v1.sql)
 to create the database schema and populate it with some sample data.
-Finally, copy the source code under the serving folder of the web server.
+Finally, copy the source code under the serving folder of your web server.
 
 You should be able to reach the web app using a web browser of your choice
 (the latest version of Chrome/Safari is recommended).
